@@ -1,0 +1,23 @@
+{
+    "name": "winter/wn-ray-plugin",
+    "type": "winter-plugin",
+    "description": "Adds support for MyRay.app to Winter CMS",
+    "keywords": ["winter", "cms", "ray", "debugging"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Towers",
+            "email": "wintercms@luketowers.ca"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "spatie/laravel-ray": "^1.9"
+    },
+    "replace": {
+        "illuminate/contracts": "7.20",
+        "illuminate/database": "7.20",
+        "illuminate/queue": "7.20",
+        "illuminate/support": "7.20"
+    }
+}
