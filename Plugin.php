@@ -1,4 +1,4 @@
-<?php namespace RainLab\Ray;
+<?php namespace Winter\Ray;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -22,19 +22,9 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Ray',
             'description' => 'No description provided yet...',
-            'author'      => 'RainLab',
+            'author'      => 'Winter CMS',
             'icon'        => 'icon-leaf'
         ];
-    }
-
-    /**
-     * Register method, called when the plugin is first registered.
-     *
-     * @return void
-     */
-    public function register()
-    {
-
     }
 
     /**
@@ -56,56 +46,5 @@ class Plugin extends PluginBase
             $installed['versions'] = array_merge($extraInstalled['versions'], $installed['versions']);
             InstalledVersions::reload($installed);
         }
-    }
-
-    /**
-     * Registers any front-end components implemented in this plugin.
-     *
-     * @return array
-     */
-    public function registerComponents()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'RainLab\Ray\Components\MyComponent' => 'myComponent',
-        ];
-    }
-
-    /**
-     * Registers any back-end permissions used by this plugin.
-     *
-     * @return array
-     */
-    public function registerPermissions()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'rainlab.ray.some_permission' => [
-                'tab' => 'Ray',
-                'label' => 'Some permission'
-            ],
-        ];
-    }
-
-    /**
-     * Registers back-end navigation items for this plugin.
-     *
-     * @return array
-     */
-    public function registerNavigation()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'ray' => [
-                'label'       => 'Ray',
-                'url'         => Backend::url('rainlab/ray/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['rainlab.ray.*'],
-                'order'       => 500,
-            ],
-        ];
     }
 }
