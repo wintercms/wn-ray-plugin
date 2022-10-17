@@ -22,17 +22,8 @@
         "source": "https://github.com/wintercms/wn-ray-plugin"
     },
     "require": {
-        "php": ">=7.2",
+        "php": "^8.0",
         "composer/installers": "~1.0",
-        "spatie/laravel-ray": "^1.9"
-    },
-    "replace": {
-        "illuminate/contracts": "7.20",
-        "illuminate/database": "7.20",
-        "illuminate/queue": "7.20",
-        "illuminate/support": "7.20"
-    },
-    "extra": {
-        "installer-name": "ray"
+        "spatie/laravel-ray": "^1.31"
     }
 }
