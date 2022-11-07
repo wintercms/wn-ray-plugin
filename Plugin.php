@@ -1,6 +1,5 @@
 <?php namespace Winter\Ray;
 
-use Backend;
 use System\Classes\PluginBase;
 
 use Composer\InstalledVersions;
@@ -21,7 +20,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Ray',
-            'description' => 'No description provided yet...',
+            'description' => 'Adds support for the Ray debugging tool to Winter CMS',
             'author'      => 'Winter CMS',
             'icon'        => 'icon-leaf'
         ];
@@ -35,7 +34,7 @@ class Plugin extends PluginBase
     public function boot()
     {
         // Register the service providers provided by the packages used by your plugin
-        \App::register(\Spatie\LaravelRay\RayServiceProvider::class);
+        $this->app->register(\Spatie\LaravelRay\RayServiceProvider::class);
 
         // Handle the requirements being installed in a plugin specific vendor directory
         // and then included by Winter instead of by composer when using Composer 2
