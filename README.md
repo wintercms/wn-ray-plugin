@@ -18,10 +18,10 @@ See https://spatie.be/docs/ray/v1/configuration/laravel for configuration option
 
 ## License
 
-This package is licensed under the [MIT license](https://github.com/wintercms/wn-vapor-plugin/blob/master/LICENSE.txt).
+This package is licensed under the [MIT license](https://github.com/wintercms/wn-ray-plugin/blob/master/LICENSE.txt).
 
 ## Support
 
-If you would like to contribute to this plugin's development, please feel free to submit issues or pull requests to the plugin's repository here: https://github.com/wintercms/wn-vapor-plugin
+If you would like to contribute to this plugin's development, please feel free to submit issues or pull requests to the plugin's repository here: https://github.com/wintercms/wn-ray-plugin
 
 If you would like to support Winter CMS, please visit [WinterCMS.com](https://wintercms.com/support)

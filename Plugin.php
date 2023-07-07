@@ -1,8 +1,8 @@
 <?php namespace Winter\Ray;
 
-use System\Classes\PluginBase;
-
 use Composer\InstalledVersions;
+use System\Classes\PluginBase;
+use Winter\Ray\Classes\RayServiceProvider;
 
 /**
  * Ray Plugin Information File
@@ -26,16 +26,16 @@ class Plugin extends PluginBase
         ];
     }
 
+    public function register()
+    {
+        $this->app->register(RayServiceProvider::class);
+    }
+
     /**
      * Boot method, called right before the request route.
-     *
-     * @return array
      */
     public function boot()
     {
-        // Register the service providers provided by the packages used by your plugin
-        $this->app->register(\Spatie\LaravelRay\RayServiceProvider::class);
-
         // Handle the requirements being installed in a plugin specific vendor directory
         // and then included by Winter instead of by composer when using Composer 2
         $localInstalled = __DIR__ . '/vendor/composer/installed.php';
