@@ -1,6 +1,8 @@
-# Ray for Winter CMS
+# Winter.Ray Plugin
 
-*Adds support for the [Ray](https://myray.app/) debugging tool to Winter CMS*
+Adds support for [Ray](https://myray.app/), a dedicated desktop application for displaying debugging output from local projects and remote servers, to Winter CMS.
+
+![ray](https://spatie.be/docs/ray/v1/images/intro.jpg)
 
 ## Installation
 
