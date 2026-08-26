@@ -1,1 +1,7 @@
 1.0.1: First version of Ray
+2.0.0:
+    - "Rebrand to Winter.Ray"
+    - "Dropped support for PHP < 8.0"
+    - "Moved the Ray configuration to config/config.php, loaded through the Winter config system"
+    - "Fixed the Composer manifest filename so the plugin's dependencies are installed"
+    - "Removed the illuminate/* replace block that conflicted with Winter's own Laravel version"
